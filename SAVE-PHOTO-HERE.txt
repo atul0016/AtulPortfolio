@@ -1,0 +1,41 @@
+╔══════════════════════════════════════════════════════════════╗
+║                                                              ║
+║       HOW TO SAVE YOUR PROFILE PHOTO                         ║
+║                                                              ║
+╚══════════════════════════════════════════════════════════════╝
+
+📸 SAVE THE IMAGE PROVIDED BY YOU
+
+Follow these steps:
+
+1. ✅ Locate the image in your chat/conversation
+   
+2. ✅ Right-click on the image
+   
+3. ✅ Select "Save Image As..." or "Download Image"
+   
+4. ✅ Navigate to this folder:
+      d:\CUSTOMS\AtulPortfolio\assets\
+   
+5. ✅ Name the file EXACTLY as:
+      atul-photo.jpg
+   
+6. ✅ Click "Save"
+
+IMPORTANT NOTES:
+- The file name must be exactly: atul-photo.jpg
+- Save it in the assets folder
+- The portfolio is already configured to use this image
+- Supported formats: JPG, JPEG
+
+AFTER SAVING:
+- Open index.html in your browser
+- Or double-click "open-portfolio.bat"
+- Your photo will appear in the hero section!
+
+═══════════════════════════════════════════════════════════════
+
+Need help? 
+Email: imatulsrivas@gmail.com
+
+═══════════════════════════════════════════════════════════════

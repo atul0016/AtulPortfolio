@@ -1,0 +1,12 @@
+IMPORTANT: Place Atul's photo in this folder
+
+Required:
+- File name: atul-photo.jpg
+- The image has been provided by the user
+- Make sure to save it as "atul-photo.jpg" in this assets folder
+
+The portfolio is looking for the image at:
+assets/atul-photo.jpg
+
+Note: The image should be properly formatted (JPG/JPEG) for web use.
+Recommended dimensions: 400x400 to 600x600 pixels for optimal quality.
