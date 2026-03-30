@@ -17,3 +17,7 @@ package-lock.json
 # Temp files
 *.tmp
 *.log
+
+
+#Ignore vscode AI rules
+.github\instructions\codacy.instructions.md

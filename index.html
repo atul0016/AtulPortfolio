@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Atul Srivastava - Software Developer | Full-Stack Developer specializing in Angular, React.js, Node.js, and Cloud Technologies">
     <meta name="author" content="Atul Srivastava">
+    <link rel="canonical" href="https://beimatulportfolio.tech/">
+    <meta property="og:url" content="https://beimatulportfolio.tech/">
+    <meta property="og:title" content="Atul Srivastava | Software Developer Portfolio">
+    <meta property="og:description" content="Atul Srivastava - Software Developer | Full-Stack Developer specializing in Angular, React.js, Node.js, and Cloud Technologies">
+    <meta property="og:type" content="website">
     <title>Atul Srivastava | Software Developer Portfolio</title>
     
     <!-- Fonts -->
@@ -12,36 +17,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
     
-    <!-- Icons8 Animated Icons -->
+    <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <!-- Lottie Files -->
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-    
-    <!-- Spline Runtime (3D) -->
-    <script type="module" src="https://unpkg.com/@splinetool/runtime@latest/build/runtime.js"></script>
-    
-    <!-- Three.js for 3D effects -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-    
-    <!-- GSAP for advanced animations -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     
     <!-- Stylesheet -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Animated Background with Shader Gradient Effect -->
-    <canvas id="gradient-canvas"></canvas>
-    
-    <!-- 3D Floating Elements (Spline-inspired) -->
-    <div class="floating-3d-container">
-        <div class="orb orb-1"></div>
-        <div class="orb orb-2"></div>
-        <div class="orb orb-3"></div>
-    </div>
-    
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
         <div class="nav-container">
@@ -68,7 +50,7 @@
     <section id="home" class="hero">
         <div class="hero-container">
             <div class="hero-content">
-                <div class="hero-text" data-scroll="fade-up">
+                <div class="hero-text" data-scroll>
                     <h1 class="hero-title">
                         Hi, I'm <span class="gradient-text">Atul Srivastava</span>
                     </h1>
@@ -79,7 +61,7 @@
                         </h2>
                     </div>
                     <p class="hero-description">
-                        Software Developer with 4+ years of experience in building scalable web and mobile applications. 
+                        Software Developer with 5+ years of experience in building scalable web and mobile applications. 
                         Skilled in Angular, React.js, Node.js, and cloud technologies.
                     </p>
                     <div class="hero-buttons">
@@ -107,44 +89,11 @@
                         </a>
                     </div>
                 </div>
-                <div class="hero-image" data-scroll="fade-left">
+                <div class="hero-image" data-scroll>
                     <div class="image-wrapper">
-                        <div class="image-glow"></div>
-                        <div class="image-border-animation"></div>
                         <img src="assets/atul-photo.png" alt="Atul Srivastava" class="profile-image">
-                        <div class="floating-elements">
-                            <div class="floating-icon floating-icon-1" data-tilt>
-                                <i class="fab fa-angular"></i>
-                                <div class="icon-ripple"></div>
-                            </div>
-                            <div class="floating-icon floating-icon-2" data-tilt>
-                                <i class="fab fa-react"></i>
-                                <div class="icon-ripple"></div>
-                            </div>
-                            <div class="floating-icon floating-icon-3" data-tilt>
-                                <i class="fab fa-node-js"></i>
-                                <div class="icon-ripple"></div>
-                            </div>
-                            <div class="floating-icon floating-icon-4" data-tilt>
-                                <i class="fab fa-aws"></i>
-                                <div class="icon-ripple"></div>
-                            </div>
-                            <div class="floating-icon floating-icon-5" data-tilt>
-                                <i class="fab fa-docker"></i>
-                                <div class="icon-ripple"></div>
-                            </div>
-                        </div>
-                        <!-- Particle system around image -->
-                        <canvas class="particle-canvas" id="particle-canvas"></canvas>
                     </div>
                 </div>
-            </div>
-            <!-- Scroll Indicator -->
-            <div class="scroll-indicator">
-                <div class="mouse">
-                    <div class="wheel"></div>
-                </div>
-                <p>Scroll Down</p>
             </div>
         </div>
     </section>
@@ -152,56 +101,29 @@
     <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
-            <div class="section-header" data-scroll="fade-up">
+            <div class="section-header" data-scroll>
                 <span class="section-subtitle">Get To Know</span>
                 <h2 class="section-title">About Me</h2>
             </div>
             <div class="about-content">
-                <div class="about-cards" data-scroll="fade-up">
-                    <div class="about-card" data-card-3d>
-                        <div class="card-glow"></div>
-                        <lottie-player
-                            src="https://lottie.host/4c2b67c8-d82a-4d54-b4b0-e0b64ff4f8e3/eZGkGFkalr.json"
-                            background="transparent"
-                            speed="1"
-                            style="width: 80px; height: 80px;"
-                            loop
-                            autoplay>
-                        </lottie-player>
-                        <h3>4+ Years</h3>
+                <div class="about-cards" data-scroll>
+                    <div class="about-card">
+                        <i class="fas fa-briefcase about-card-icon"></i>
+                        <h3>5+ Years</h3>
                         <p>Experience</p>
-                        <div class="card-particles"></div>
                     </div>
-                    <div class="about-card" data-card-3d>
-                        <div class="card-glow"></div>
-                        <lottie-player
-                            src="https://lottie.host/embed/a7d64b5e-2e47-4fba-bb9c-5859f3a62b23/1nALi4JmIZ.json"
-                            background="transparent"
-                            speed="1"
-                            style="width: 80px; height: 80px;"
-                            loop
-                            autoplay>
-                        </lottie-player>
+                    <div class="about-card">
+                        <i class="fas fa-project-diagram about-card-icon"></i>
                         <h3>20+ Projects</h3>
                         <p>Completed</p>
-                        <div class="card-particles"></div>
                     </div>
-                    <div class="about-card" data-card-3d>
-                        <div class="card-glow"></div>
-                        <lottie-player
-                            src="https://lottie.host/embed/5b642b5e-6e3e-4f1c-b785-3e3d27b15c93/MgKWBSBhfN.json"
-                            background="transparent"
-                            speed="1"
-                            style="width: 80px; height: 80px;"
-                            loop
-                            autoplay>
-                        </lottie-player>
+                    <div class="about-card">
+                        <i class="fas fa-laptop-code about-card-icon"></i>
                         <h3>Full-Stack</h3>
                         <p>Developer</p>
-                        <div class="card-particles"></div>
                     </div>
                 </div>
-                <div class="about-text" data-scroll="fade-up">
+                <div class="about-text" data-scroll>
                     <p class="lead">
                         I'm a passionate Software Developer with expertise in end-to-end application development, 
                         CI/CD automation, and user-centric design.
@@ -228,38 +150,60 @@
     <!-- Experience Section -->
     <section id="experience" class="experience">
         <div class="container">
-            <div class="section-header" data-scroll="fade-up">
+            <div class="section-header" data-scroll>
                 <span class="section-subtitle">My Journey</span>
                 <h2 class="section-title">Work Experience</h2>
             </div>
             <div class="timeline">
                 <!-- Experience 1 -->
-                <div class="timeline-item" data-scroll="fade-up">
+                <div class="timeline-item" data-scroll>
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
-                        <div class="timeline-date">October 2023 – Present</div>
+                        <div class="timeline-date">October 2023 – March 2026</div>
                         <h3 class="timeline-title">Application Developer</h3>
                         <h4 class="timeline-company">NeoBitSoft - Remote/Germany</h4>
                         <ul class="timeline-description">
-                            <li>Developed production-grade kindergarten management application using Angular 18, Ionic 8, NgRx, and Capacitor</li>
-                            <li>Delivered offline-first PWA features, multi-language support, and secure JWT authentication</li>
-                            <li>Built scalable Playwright E2E automation framework using TypeScript and Page Object Model</li>
-                            <li>Created Cypress test automation suite with custom commands, IMAP email testing, and Jenkins CI integration</li>
-                            <li>Developed and managed WordPress (Bedrock) website with custom Bootstrap 5 theme and Mailchimp API integration</li>
+                            <li>Architected and developed a production-grade kindergarten management app ("Bärenkinder") using Angular 18, Ionic 8, NgRx, and Capacitor 6 — serving multi-role users (Board, Educators, Interns, Parents) across web and mobile platforms</li>
+                            <li>Implemented 8 NgRx feature stores (Account, Employees, Users, Work Records, Absence, Settings, WorkTimeScheme, Time) with full action/reducer/effect/selector patterns, enabling predictable state management across 12 feature modules and 60+ standalone components</li>
+                            <li>Built offline-first PWA with Angular Service Worker, pre-cached assets, and manifest support — enabling uninterrupted usage in low-connectivity environments</li>
+                            <li>Delivered multi-language support (German/English) using ngx-translate with HTTP loader, timezone-aware date handling via date-fns-tz, and locale-specific formatting throughout the app</li>
+                            <li>Implemented secure OAuth2/JWT authentication with route guards, HTTP interceptors for token injection and error handling, and multi-role access control across the application</li>
+                            <li>Developed complex business modules including work time tracking (clock in/out, manual booking, break handling, 7:00–20:00 core hours, max 9–10 hr/day rules), leave management (vacation, sick leave, overlap detection, approval workflows), team calendar scheduling, and employee presence management</li>
+                            <li>Set up multi-environment build pipeline — production, staging, dev, cypress, and neobitsoft builds — with Docker multi-stage deployments (Alpine Node → Nginx) and strict Angular build budgets (2MB initial / 5MB max)</li>
+                            <li>Configured GitHub Actions CI/CD with daily scheduled deployments, PR-based preview environments with auto-generated URLs, Docker builds pushed to GitHub Container Registry (GHCR), SSH deployment automation, and cross-repo backend/frontend coordination</li>
+                            <li>Built a scalable Playwright E2E automation framework from scratch with TypeScript — implementing Page Object Model architecture across 9 test suites covering authentication, members, work records, work regulations, absences, leave management, team calendar, settings, and localization</li>
+                            <li>Developed reusable Playwright test infrastructure including shared page components (date-picker, time-picker, menu, alert, action-sheet), 11 specialized test helpers, API service wrappers, test data factories using Faker.js, and custom fixtures</li>
+                            <li>Created a custom ESLint plugin (eslint-plugin-enum-rules) with 7 linting rules enforcing POM conventions — including one-enum-per-file, page/locator/validator/interface naming conventions, base class extension requirements, and no-locator-assignments-in-tests</li>
+                            <li>Integrated IMAP-based email verification into Playwright tests for automated email notification testing, including quoted-printable decoding and environment-aware email configurations</li>
+                            <li>Built a comprehensive Cypress test automation suite with 90+ test cases across record time (50+ cases covering clock in/out, manual booking, breaks, overlaps, overtime, max hours validation), user management (10+ cases), leave management (15+ cases with holiday handling), and settings</li>
+                            <li>Integrated Gmail OAuth2 API and Mailslurp for Cypress email verification, implemented custom Cypress commands, XPath selectors, real-event simulation, and business-day/holiday-aware date calculations</li>
+                            <li>Configured Jenkins CI pipeline for automated Cypress test execution with Mochawesome HTML reporting, screenshot-on-failure, embedded video recordings, chart visualizations, and email notifications with aggregated test results</li>
+                            <li>Enforced code quality across all projects using ESLint, Prettier, Husky pre-commit hooks, lint-staged, and TypeScript strict mode — maintaining consistent standards across the entire development and testing ecosystem</li>
+                            <li>Developed and managed the NeoBitSoft company website using WordPress (Roots Bedrock) with Composer-based dependency management, custom Bootstrap 5 theme, Contact Form 7, Post SMTP email delivery, SEO optimization, and environment-specific configurations</li>
+                            <li>Set up a separate WordPress testing/staging environment with Playwright-based website test automation, Mailpit for local email capture, and comprehensive SEO implementation following documented guidelines</li>
                         </ul>
                         <div class="tech-tags">
                             <span class="tech-tag">Angular 18</span>
                             <span class="tech-tag">Ionic 8</span>
                             <span class="tech-tag">NgRx</span>
+                            <span class="tech-tag">Capacitor 6</span>
+                            <span class="tech-tag">TypeScript</span>
                             <span class="tech-tag">Playwright</span>
                             <span class="tech-tag">Cypress</span>
-                            <span class="tech-tag">WordPress</span>
+                            <span class="tech-tag">Docker</span>
+                            <span class="tech-tag">GitHub Actions</span>
+                            <span class="tech-tag">Jenkins</span>
+                            <span class="tech-tag">WordPress/Bedrock</span>
+                            <span class="tech-tag">PWA</span>
+                            <span class="tech-tag">OAuth2/JWT</span>
+                            <span class="tech-tag">IMAP/Gmail API</span>
+                            <span class="tech-tag">Nginx</span>
                         </div>
                     </div>
                 </div>
 
                 <!-- Experience 2 -->
-                <div class="timeline-item" data-scroll="fade-left">
+                <div class="timeline-item" data-scroll>
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
                         <div class="timeline-date">March 2022 - September 2023</div>
@@ -279,7 +223,7 @@
                 </div>
 
                 <!-- Experience 3 -->
-                <div class="timeline-item" data-scroll="fade-up">
+                <div class="timeline-item" data-scroll>
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
                         <div class="timeline-date">June 2020 - March 2022</div>
@@ -308,14 +252,14 @@
     <!-- Projects Section -->
     <section id="projects" class="projects">
         <div class="container">
-            <div class="section-header" data-scroll="fade-up">
+            <div class="section-header" data-scroll>
                 <span class="section-subtitle">My Work</span>
                 <h2 class="section-title">Featured Projects</h2>
                 <p class="section-description">A curated selection of products, tools, and applications I've designed and shipped — from enterprise platforms to browser extensions used by real users.</p>
             </div>
 
             <!-- Category Filter Tabs -->
-            <div class="project-filters" data-scroll="fade-up">
+            <div class="project-filters" data-scroll>
                 <button class="filter-btn active" data-filter="all">
                     <i class="fas fa-th-large"></i>
                     <span>All Projects</span>
@@ -336,8 +280,7 @@
 
             <div class="projects-grid">
                 <!-- Project: SA ERP (Featured/Enterprise) -->
-                <div class="project-card project-card-featured" data-scroll="fade-up" data-tilt-project data-category="enterprise">
-                    <div class="project-shine"></div>
+                <div class="project-card project-card-featured" data-scroll data-category="enterprise">
                     <div class="project-badge">
                         <i class="fas fa-star"></i> Flagship Product
                     </div>
@@ -394,8 +337,7 @@
                 </div>
 
                 <!-- Project: Advanced Smart Capture (Chrome Extension) -->
-                <div class="project-card" data-scroll="fade-up" data-tilt-project data-category="extension">
-                    <div class="project-shine"></div>
+                <div class="project-card" data-scroll data-category="extension">
                     <div class="project-badge extension-badge">
                         <i class="fab fa-chrome"></i> Published Extension
                     </div>
@@ -455,8 +397,7 @@
                 </div>
 
                 <!-- Project: Pixel Ruler + Alignment Checker (Chrome Extension) -->
-                <div class="project-card" data-scroll="fade-up" data-tilt-project data-category="extension">
-                    <div class="project-shine"></div>
+                <div class="project-card" data-scroll data-category="extension">
                     <div class="project-badge extension-badge">
                         <i class="fab fa-chrome"></i> Published Extension
                     </div>
@@ -512,8 +453,7 @@
                 </div>
 
                 <!-- Project: Kindergarten Management App (Company Project) -->
-                <div class="project-card" data-scroll="fade-up" data-tilt-project data-category="enterprise">
-                    <div class="project-shine"></div>
+                <div class="project-card" data-scroll data-category="enterprise">
                     <div class="project-badge company-badge">
                         <i class="fas fa-building"></i> Company Project
                     </div>
@@ -523,7 +463,6 @@
                                 <i class="fas fa-child"></i>
                             </div>
                         </div>
-                        <div class="project-mesh-gradient mesh-gradient-green"></div>
                     </div>
                     <div class="project-content">
                         <div class="project-header">
@@ -548,15 +487,13 @@
                 </div>
 
                 <!-- Project: POD Originals -->
-                <div class="project-card" data-scroll="fade-up" data-tilt-project data-category="webapp">
-                    <div class="project-shine"></div>
+                <div class="project-card" data-scroll data-category="webapp">
                     <div class="project-image">
                         <div class="project-overlay">
                             <div class="project-icon-wrapper">
                                 <i class="fas fa-play-circle"></i>
                             </div>
                         </div>
-                        <div class="project-mesh-gradient mesh-gradient-pink"></div>
                     </div>
                     <div class="project-content">
                         <div class="project-header">
@@ -574,20 +511,17 @@
                             <span class="tech-tag">DynamoDB</span>
                             <span class="tech-tag">Firebase</span>
                         </div>
-
                     </div>
                 </div>
 
                 <!-- Project: Drop-Shipping E-commerce -->
-                <div class="project-card" data-scroll="fade-up" data-tilt-project data-category="webapp">
-                    <div class="project-shine"></div>
+                <div class="project-card" data-scroll data-category="webapp">
                     <div class="project-image">
                         <div class="project-overlay">
                             <div class="project-icon-wrapper">
                                 <i class="fas fa-shopping-cart"></i>
                             </div>
                         </div>
-                        <div class="project-mesh-gradient mesh-gradient-amber"></div>
                     </div>
                     <div class="project-content">
                         <div class="project-header">
@@ -605,13 +539,12 @@
                             <span class="tech-tag">MongoDB</span>
                             <span class="tech-tag">REST API</span>
                         </div>
-
                     </div>
                 </div>
             </div>
 
             <!-- Project Stats Bar -->
-            <div class="project-stats" data-scroll="fade-up">
+            <div class="project-stats" data-scroll>
                 <div class="stat-item">
                     <div class="stat-number" data-count="6">0</div>
                     <div class="stat-label">Projects Shipped</div>
@@ -635,12 +568,12 @@
     <!-- Skills Section -->
     <section id="skills" class="skills">
         <div class="container">
-            <div class="section-header" data-scroll="fade-up">
+            <div class="section-header" data-scroll>
                 <span class="section-subtitle">Technical Proficiency</span>
                 <h2 class="section-title">Skills & Technologies</h2>
             </div>
             <div class="skills-container">
-                <div class="skills-category" data-scroll="fade-up">
+                <div class="skills-category" data-scroll>
                     <h3 class="skills-category-title">
                         <i class="fas fa-code"></i>
                         Languages
@@ -679,7 +612,7 @@
                     </div>
                 </div>
 
-                <div class="skills-category" data-scroll="fade-up">
+                <div class="skills-category" data-scroll>
                     <h3 class="skills-category-title">
                         <i class="fas fa-layer-group"></i>
                         Frameworks & Libraries
@@ -718,7 +651,7 @@
                     </div>
                 </div>
 
-                <div class="skills-category" data-scroll="fade-up">
+                <div class="skills-category" data-scroll>
                     <h3 class="skills-category-title">
                         <i class="fas fa-database"></i>
                         State Management & Database
@@ -757,7 +690,7 @@
                     </div>
                 </div>
 
-                <div class="skills-category" data-scroll="fade-up">
+                <div class="skills-category" data-scroll>
                     <h3 class="skills-category-title">
                         <i class="fas fa-vial"></i>
                         Testing & Automation
@@ -790,7 +723,7 @@
                     </div>
                 </div>
 
-                <div class="skills-category" data-scroll="fade-up">
+                <div class="skills-category" data-scroll>
                     <h3 class="skills-category-title">
                         <i class="fas fa-palette"></i>
                         Styling & Design
@@ -823,7 +756,7 @@
                     </div>
                 </div>
 
-                <div class="skills-category" data-scroll="fade-up">
+                <div class="skills-category" data-scroll>
                     <h3 class="skills-category-title">
                         <i class="fas fa-cloud"></i>
                         Cloud & DevOps
@@ -862,21 +795,14 @@
     <!-- Education Section -->
     <section id="education" class="education">
         <div class="container">
-            <div class="section-header" data-scroll="fade-up">
+            <div class="section-header" data-scroll>
                 <span class="section-subtitle">Academic Background</span>
                 <h2 class="section-title">Education</h2>
             </div>
-            <div class="education-content" data-scroll="fade-up">
+            <div class="education-content" data-scroll>
                 <div class="education-card">
                     <div class="education-icon">
-                        <lottie-player
-                            src="https://assets1.lottiefiles.com/packages/lf20_ht0bkodc.json"
-                            background="transparent"
-                            speed="1"
-                            style="width: 80px; height: 80px;"
-                            loop
-                            autoplay>
-                        </lottie-player>
+                        <i class="fas fa-graduation-cap"></i>
                     </div>
                     <div class="education-details">
                         <h3 class="education-degree">Bachelor of Technology</h3>
@@ -900,12 +826,12 @@
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
-            <div class="section-header" data-scroll="fade-up">
+            <div class="section-header" data-scroll>
                 <span class="section-subtitle">Let's Connect</span>
                 <h2 class="section-title">Get In Touch</h2>
             </div>
             <div class="contact-content">
-                <div class="contact-info" data-scroll="fade-right">
+                <div class="contact-info" data-scroll>
                     <div class="contact-text">
                         <h3>Let's work together!</h3>
                         <p>
@@ -943,7 +869,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="contact-form-wrapper" data-scroll="fade-left">
+                <div class="contact-form-wrapper" data-scroll>
                     <form class="contact-form" id="contact-form">
                         <div class="form-group">
                             <label for="name">Your Name</label>
