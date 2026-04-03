@@ -207,26 +207,61 @@ class ContactForm {
         this.form = document.getElementById('contact-form');
         if (!this.form) return;
 
-        this.form.addEventListener('submit', (e) => {
+        this.form.addEventListener('submit', async (e) => {
             e.preventDefault();
-            const data = Object.fromEntries(new FormData(this.form));
-            console.log('Form Data:', data);
+            const btn = this.form.querySelector('button[type="submit"]');
+            const originalText = btn.innerHTML;
+            btn.innerHTML = '<span>Sending...</span><i class="fas fa-spinner fa-spin"></i>';
+            btn.disabled = true;
 
-            const msg = document.createElement('div');
-            msg.textContent = 'Message sent successfully! I\'ll get back to you soon.';
-            msg.style.cssText = `
-                margin-top: 1rem; padding: 0.875rem; border-radius: 8px;
-                background: #f0fdf4; color: #16a34a; border: 1px solid #bbf7d0;
-                font-size: 0.9rem;
-            `;
+            try {
+                const res = await fetch(this.form.action, {
+                    method: 'POST',
+                    body: new FormData(this.form),
+                    headers: { 'Accept': 'application/json' }
+                });
 
-            const existing = this.form.querySelector('.form-message');
-            if (existing) existing.remove();
-            msg.className = 'form-message';
-            this.form.appendChild(msg);
-            this.form.reset();
+                const msg = document.createElement('div');
+                const existing = this.form.querySelector('.form-message');
+                if (existing) existing.remove();
+                msg.className = 'form-message';
 
-            setTimeout(() => msg.remove(), 5000);
+                if (res.ok) {
+                    msg.textContent = 'Message sent successfully! I\'ll get back to you soon.';
+                    msg.style.cssText = `
+                        margin-top: 1rem; padding: 0.875rem; border-radius: 8px;
+                        background: #f0fdf4; color: #16a34a; border: 1px solid #bbf7d0;
+                        font-size: 0.9rem;
+                    `;
+                    this.form.reset();
+                } else {
+                    msg.textContent = 'Something went wrong. Please try again or email me directly.';
+                    msg.style.cssText = `
+                        margin-top: 1rem; padding: 0.875rem; border-radius: 8px;
+                        background: #fef2f2; color: #dc2626; border: 1px solid #fecaca;
+                        font-size: 0.9rem;
+                    `;
+                }
+
+                this.form.appendChild(msg);
+                setTimeout(() => msg.remove(), 5000);
+            } catch {
+                const msg = document.createElement('div');
+                msg.className = 'form-message';
+                msg.textContent = 'Network error. Please check your connection and try again.';
+                msg.style.cssText = `
+                    margin-top: 1rem; padding: 0.875rem; border-radius: 8px;
+                    background: #fef2f2; color: #dc2626; border: 1px solid #fecaca;
+                    font-size: 0.9rem;
+                `;
+                const existing = this.form.querySelector('.form-message');
+                if (existing) existing.remove();
+                this.form.appendChild(msg);
+                setTimeout(() => msg.remove(), 5000);
+            } finally {
+                btn.innerHTML = originalText;
+                btn.disabled = false;
+            }
         });
     }
 }

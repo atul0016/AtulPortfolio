@@ -49,6 +49,7 @@
                 <li><a href="#experience" class="nav-link">Experience</a></li>
                 <li><a href="#projects" class="nav-link">Projects</a></li>
                 <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#hire" class="nav-link nav-link-hire">Hire Me</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
             <div class="hamburger" id="hamburger">
@@ -962,6 +963,55 @@
         </div>
     </section>
 
+    <!-- Hire Me CTA Section -->
+    <section id="hire" class="hire-me">
+        <div class="container">
+            <div class="hire-me-content" data-scroll>
+                <div class="hire-me-badge">
+                    <span class="status-dot-pulse"></span>
+                    <span>Available for Work</span>
+                </div>
+                <h2 class="hire-me-title">Need a Developer Who Ships?</h2>
+                <p class="hire-me-description">
+                    I build production-grade software — ERP systems, SaaS platforms, Chrome extensions, and web apps. 
+                    If you need a reliable full-stack developer for your next project, let's talk.
+                </p>
+                <div class="hire-me-services">
+                    <div class="hire-service-tag">
+                        <i class="fas fa-building"></i>
+                        <span>ERP & Business Software</span>
+                    </div>
+                    <div class="hire-service-tag">
+                        <i class="fas fa-cloud"></i>
+                        <span>SaaS Platforms</span>
+                    </div>
+                    <div class="hire-service-tag">
+                        <i class="fab fa-chrome"></i>
+                        <span>Chrome Extensions</span>
+                    </div>
+                    <div class="hire-service-tag">
+                        <i class="fas fa-mobile-alt"></i>
+                        <span>Web & Mobile Apps</span>
+                    </div>
+                    <div class="hire-service-tag">
+                        <i class="fas fa-vial"></i>
+                        <span>Test Automation</span>
+                    </div>
+                </div>
+                <div class="hire-me-buttons">
+                    <a href="mailto:imatulsrivas@gmail.com?subject=Project%20Inquiry&body=Hi%20Atul%2C%0A%0AI%27d%20like%20to%20discuss%20a%20project%20with%20you.%0A%0AProject%20type%3A%20%0ABudget%20range%3A%20%0ATimeline%3A%20%0A%0ABrief%20description%3A%20" class="btn btn-primary btn-lg">
+                        <span>Hire Me</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary btn-lg">
+                        <span>Send a Message</span>
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
@@ -1009,7 +1059,11 @@
                     </div>
                 </div>
                 <div class="contact-form-wrapper" data-scroll>
-                    <form class="contact-form" id="contact-form">
+                    <form class="contact-form" id="contact-form" action="https://formsubmit.co/imatulsrivas@gmail.com" method="POST">
+                        <input type="hidden" name="_subject" value="New Portfolio Contact Message">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_template" value="table">
+                        <input type="text" name="_honey" style="display:none">
                         <div class="form-group">
                             <label for="name">Your Name</label>
                             <input type="text" id="name" name="name" required>
