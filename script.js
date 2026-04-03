@@ -1,5 +1,5 @@
 // ===================================
-// Professional Portfolio — Minimal JavaScript
+// Premium Portfolio — Minimal JavaScript
 // Only essential interactivity, no heavy animations
 // ===================================
 
@@ -46,7 +46,7 @@ class TypeWriter {
 }
 
 // ===================================
-// Navigation
+// Navigation (debounced scroll)
 // ===================================
 class Navigation {
     constructor() {
@@ -54,14 +54,21 @@ class Navigation {
         this.hamburger = document.getElementById('hamburger');
         this.navMenu = document.getElementById('nav-menu');
         this.navLinks = document.querySelectorAll('.nav-link');
+        this.ticking = false;
         this.init();
     }
 
     init() {
         window.addEventListener('scroll', () => {
-            this.navbar.classList.toggle('scrolled', window.scrollY > 20);
-            this.updateActiveLink();
-        });
+            if (!this.ticking) {
+                requestAnimationFrame(() => {
+                    this.navbar.classList.toggle('scrolled', window.scrollY > 20);
+                    this.updateActiveLink();
+                    this.ticking = false;
+                });
+                this.ticking = true;
+            }
+        }, { passive: true });
 
         this.hamburger.addEventListener('click', () => {
             this.hamburger.classList.toggle('active');
