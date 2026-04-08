@@ -11,7 +11,7 @@
     <meta property="og:description" content="Atul Srivastava - Software Developer | Full-Stack Developer specializing in Angular, React.js, Node.js, and Cloud Technologies">
     <meta property="og:type" content="website">
     <title>Atul Srivastava | Software Developer Portfolio</title>
-    <meta name="theme-color" content="#0f172a">
+    <meta name="theme-color" content="#F5A623">
     <meta name="color-scheme" content="light">
     
     <!-- Preload critical resources -->
@@ -20,7 +20,7 @@
     <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
     
     <!-- Fonts — display=swap for instant text rendering -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
     
     <!-- Icons — loaded async to not block render -->
     <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
@@ -31,8 +31,8 @@
     
     <!-- Inline critical above-the-fold styles -->
     <style>
-      body{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;margin:0;background:#fff;color:#0f172a}
-      .navbar{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(255,255,255,.92);backdrop-filter:blur(12px);border-bottom:1px solid #e2e8f0}
+      body{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;margin:0;background:#fff;color:#111}
+      .navbar{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(255,255,255,.92);backdrop-filter:blur(12px);border-bottom:1px solid #ebebeb}
       .hero{min-height:100vh;display:flex;align-items:center}
     </style>
 </head>
@@ -50,6 +50,7 @@
                 <li><a href="#projects" class="nav-link">Projects</a></li>
                 <li><a href="#skills" class="nav-link">Skills</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="#hire-me" class="nav-link nav-link-hire">Hire Me</a></li>
             </ul>
             <div class="hamburger" id="hamburger">
                 <span></span>
@@ -104,7 +105,25 @@
                 </div>
                 <div class="hero-image" data-scroll>
                     <div class="image-wrapper">
+                        <div class="hero-img-bg"></div>
                         <img src="assets/atul-photo.png" alt="Atul Srivastava" class="profile-image">
+                        <!-- Floating tech badges -->
+                        <div class="hero-float-badge badge-react">
+                            <i class="fab fa-react"></i>
+                            <span>React 19</span>
+                        </div>
+                        <div class="hero-float-badge badge-angular">
+                            <i class="fab fa-angular"></i>
+                            <span>Angular 18</span>
+                        </div>
+                        <div class="hero-float-badge badge-node">
+                            <i class="fab fa-node-js"></i>
+                            <span>Node.js</span>
+                        </div>
+                        <div class="hero-float-badge badge-open">
+                            <span class="badge-open-dot"></span>
+                            <span>Open to Work</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -834,6 +853,186 @@
                             </span>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hire Me CTA -->
+    <section id="hire-me" class="hire-me">
+        <div class="container">
+            <div class="hire-me-inner">
+                <div class="hire-me-content" data-scroll>
+                    <div class="hire-me-badge">
+                        <span class="status-dot-pulse"></span>
+                        Available for new projects
+                    </div>
+                    <h2 class="hire-me-title">Let's build something <span class="highlight">great</span> together</h2>
+                    <p class="hire-me-description">
+                        I'm currently open to freelance, contract, and full-time opportunities. 
+                        Whether you need a full-stack developer for a SaaS, ERP system, or a custom web app — I'm here.
+                    </p>
+                    <div class="hire-me-services">
+                        <span class="hire-service-tag"><i class="fas fa-layer-group"></i> Full-Stack Dev</span>
+                        <span class="hire-service-tag"><i class="fas fa-mobile-alt"></i> PWA & Mobile</span>
+                        <span class="hire-service-tag"><i class="fas fa-robot"></i> Test Automation</span>
+                        <span class="hire-service-tag"><i class="fas fa-cloud"></i> Cloud & CI/CD</span>
+                        <span class="hire-service-tag"><i class="fas fa-boxes"></i> ERP Solutions</span>
+                        <span class="hire-service-tag"><i class="fas fa-vial"></i> QA Engineering</span>
+                    </div>
+                    <div class="hire-me-buttons">
+                        <a href="mailto:imatulsrivas@gmail.com" class="btn btn-primary btn-lg">
+                            <span>Hire Me Now</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="#projects" class="btn btn-outline-white btn-lg">
+                            <span>See My Work</span>
+                            <i class="fas fa-code"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Developer workspace SVG illustration -->
+                <div class="hire-me-illustration" data-scroll>
+                    <svg viewBox="0 0 460 380" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Developer at work illustration">
+                        <!-- Background glow -->
+                        <ellipse cx="230" cy="190" rx="210" ry="180" fill="#F5A623" fill-opacity="0.06"/>
+
+                        <!-- Desk -->
+                        <rect x="50" y="298" width="380" height="14" rx="7" fill="#D4880A" fill-opacity="0.35"/>
+                        <rect x="50" y="308" width="380" height="6" rx="3" fill="#B8720A" fill-opacity="0.25"/>
+
+                        <!-- Monitor bezel -->
+                        <rect x="120" y="100" width="250" height="165" rx="14" fill="#1E2A3B"/>
+                        <!-- Monitor screen -->
+                        <rect x="130" y="110" width="230" height="143" rx="8" fill="#0D1520"/>
+                        <!-- Toolbar row -->
+                        <rect x="135" y="115" width="220" height="18" rx="4" fill="#161F2E"/>
+                        <circle cx="147" cy="124" r="4.5" fill="#FF5F57" fill-opacity="0.8"/>
+                        <circle cx="161" cy="124" r="4.5" fill="#FFBD2E" fill-opacity="0.8"/>
+                        <circle cx="175" cy="124" r="4.5" fill="#28C940" fill-opacity="0.8"/>
+
+                        <!-- Code on screen — line 1 -->
+                        <rect x="142" y="143" width="28" height="5" rx="2" fill="#F97316" fill-opacity="0.9"/>
+                        <rect x="174" y="143" width="52" height="5" rx="2" fill="#94A3B8" fill-opacity="0.6"/>
+
+                        <!-- line 2 -->
+                        <rect x="150" y="156" width="70" height="4" rx="2" fill="#34D399" fill-opacity="0.85"/>
+                        <rect x="224" y="156" width="42" height="4" rx="2" fill="#64748B" fill-opacity="0.5"/>
+
+                        <!-- line 3 -->
+                        <rect x="150" y="167" width="50" height="4" rx="2" fill="#F5A623" fill-opacity="0.9"/>
+                        <rect x="204" y="167" width="65" height="4" rx="2" fill="#A78BFA" fill-opacity="0.7"/>
+
+                        <!-- line 4 -->
+                        <rect x="150" y="178" width="80" height="4" rx="2" fill="#22D3EE" fill-opacity="0.8"/>
+
+                        <!-- line 5 -->
+                        <rect x="142" y="189" width="35" height="4" rx="2" fill="#F97316" fill-opacity="0.85"/>
+                        <rect x="181" y="189" width="68" height="4" rx="2" fill="#34D399" fill-opacity="0.7"/>
+
+                        <!-- line 6 -->
+                        <rect x="150" y="200" width="45" height="4" rx="2" fill="#F5A623" fill-opacity="0.8"/>
+                        <rect x="199" y="200" width="56" height="4" rx="2" fill="#94A3B8" fill-opacity="0.5"/>
+
+                        <!-- line 7 -->
+                        <rect x="150" y="211" width="88" height="4" rx="2" fill="#22D3EE" fill-opacity="0.6"/>
+
+                        <!-- line 8 -->
+                        <rect x="142" y="224" width="42" height="4" rx="2" fill="#F97316" fill-opacity="0.75"/>
+                        <rect x="188" y="224" width="55" height="4" rx="2" fill="#64748B" fill-opacity="0.45"/>
+
+                        <!-- Monitor neck -->
+                        <rect x="241" y="265" width="12" height="28" rx="5" fill="#2D3748"/>
+                        <!-- Monitor base -->
+                        <rect x="218" y="289" width="58" height="10" rx="5" fill="#2D3748"/>
+
+                        <!-- Chair back (behind person) -->
+                        <rect x="190" y="178" width="22" height="122" rx="8" fill="#374151"/>
+                        <rect x="278" y="178" width="22" height="122" rx="8" fill="#374151"/>
+                        <rect x="190" y="178" width="110" height="20" rx="8" fill="#4B5563"/>
+
+                        <!-- Torso — orange shirt -->
+                        <path d="M207 210 L207 298 L283 298 L283 210 Q261 198 245 196 Q229 198 207 210Z" fill="#F5A623"/>
+
+                        <!-- Head -->
+                        <circle cx="245" cy="165" r="36" fill="#E8C5A0"/>
+
+                        <!-- Hair -->
+                        <path d="M209 157 Q215 124 245 121 Q275 124 281 157 Q271 142 245 140 Q219 142 209 157Z" fill="#2D1B0E"/>
+                        <path d="M212 163 Q209 153 211 143" stroke="#2D1B0E" stroke-width="7" stroke-linecap="round" fill="none"/>
+                        <path d="M278 163 Q281 153 279 143" stroke="#2D1B0E" stroke-width="7" stroke-linecap="round" fill="none"/>
+
+                        <!-- Eyes -->
+                        <circle cx="236" cy="163" r="4" fill="#2D1B0E"/>
+                        <circle cx="254" cy="163" r="4" fill="#2D1B0E"/>
+                        <circle cx="237.5" cy="161.5" r="1.4" fill="white" fill-opacity="0.9"/>
+                        <circle cx="255.5" cy="161.5" r="1.4" fill="white" fill-opacity="0.9"/>
+
+                        <!-- Smile -->
+                        <path d="M238 175 Q245 181 252 175" stroke="#2D1B0E" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+
+                        <!-- Arms at desk -->
+                        <path d="M207 228 Q186 252 174 298" stroke="#E8C5A0" stroke-width="22" stroke-linecap="round" fill="none"/>
+                        <path d="M283 228 Q304 252 316 298" stroke="#E8C5A0" stroke-width="22" stroke-linecap="round" fill="none"/>
+                        <ellipse cx="172" cy="300" rx="14" ry="8" fill="#E8C5A0"/>
+                        <ellipse cx="318" cy="300" rx="14" ry="8" fill="#E8C5A0"/>
+
+                        <!-- Keyboard -->
+                        <rect x="175" y="298" width="146" height="14" rx="5" fill="#E2E8F0"/>
+                        <rect x="178" y="301" width="140" height="8" rx="3" fill="#F0F4F8"/>
+                        <rect x="181" y="303" width="134" height="2" rx="1" fill="#CBD5E1"/>
+                        <rect x="184" y="307" width="126" height="2" rx="1" fill="#CBD5E1"/>
+
+                        <!-- Mouse -->
+                        <ellipse cx="346" cy="305" rx="12" ry="9" fill="#E2E8F0" stroke="#CBD5E1" stroke-width="1"/>
+
+                        <!-- Coffee mug -->
+                        <rect x="388" y="272" width="30" height="30" rx="5" fill="white" stroke="#E2E8F0" stroke-width="1.5"/>
+                        <path d="M418 280 Q430 280 430 287 Q430 294 418 294" stroke="#E2E8F0" stroke-width="3" fill="none" stroke-linecap="round"/>
+                        <rect x="391" y="277" width="24" height="7" rx="2" fill="#E8B87A" fill-opacity="0.7"/>
+                        <!-- Steam -->
+                        <path d="M397 267 Q399 261 397 255" stroke="#94A3B8" stroke-width="1.5" fill="none" stroke-linecap="round" fill-opacity="0.4"/>
+                        <path d="M407 265 Q409 258 407 251" stroke="#94A3B8" stroke-width="1.5" fill="none" stroke-linecap="round" fill-opacity="0.35"/>
+
+                        <!-- Books stack -->
+                        <rect x="60" y="280" width="48" height="18" rx="3" fill="#FF6B35" fill-opacity="0.85"/>
+                        <rect x="63" y="276" width="42" height="7" rx="2" fill="#D4440A" fill-opacity="0.9"/>
+                        <rect x="64" y="267" width="46" height="12" rx="3" fill="#F5A623" fill-opacity="0.9"/>
+                        <rect x="67" y="263" width="38" height="6" rx="2" fill="#D4880A" fill-opacity="0.9"/>
+
+                        <!-- Floating decorators -->
+                        <!-- Code bracket -->
+                        <text x="32" y="140" font-family="monospace" font-size="30" fill="#F5A623" fill-opacity="0.3" font-weight="bold">{}</text>
+                        <!-- HTML tag -->
+                        <text x="398" y="108" font-family="monospace" font-size="18" fill="#FF6B35" fill-opacity="0.35">&lt;/&gt;</text>
+
+                        <!-- Floating skill chips -->
+                        <rect x="378" y="135" width="75" height="24" rx="12" fill="white" stroke="#F5A623" stroke-width="1.5" fill-opacity="0.9" stroke-opacity="0.7"/>
+                        <circle cx="391" cy="147" r="5" fill="#F5A623" fill-opacity="0.7"/>
+                        <rect x="400" y="144" width="42" height="4" rx="2" fill="#F5A623" fill-opacity="0.5"/>
+
+                        <rect x="8" y="170" width="80" height="24" rx="12" fill="white" stroke="#FF6B35" stroke-width="1.5" fill-opacity="0.9" stroke-opacity="0.6"/>
+                        <circle cx="22" cy="182" r="5" fill="#FF6B35" fill-opacity="0.7"/>
+                        <rect x="32" y="179" width="45" height="4" rx="2" fill="#FF6B35" fill-opacity="0.5"/>
+
+                        <!-- Geometric shapes -->
+                        <rect x="30" y="49" width="24" height="24" rx="5" fill="#F5A623" fill-opacity="0.12" transform="rotate(18 42 61)"/>
+                        <rect x="414" y="340" width="20" height="20" rx="4" fill="#FF6B35" fill-opacity="0.12" transform="rotate(-14 424 350)"/>
+                        <rect x="18" y="310" width="16" height="16" rx="3" fill="#F5A623" fill-opacity="0.15" transform="rotate(10 26 318)"/>
+                        <rect x="430" y="200" width="18" height="18" rx="4" fill="#FF6B35" fill-opacity="0.12" transform="rotate(20 439 209)"/>
+
+                        <!-- Dots -->
+                        <circle cx="72" cy="62" r="7" fill="#F5A623" fill-opacity="0.18"/>
+                        <circle cx="430" cy="168" r="5.5" fill="#FF6B35" fill-opacity="0.18"/>
+                        <circle cx="22" cy="240" r="6" fill="#F5A623" fill-opacity="0.15"/>
+                        <circle cx="444" cy="270" r="5" fill="#FF6B35" fill-opacity="0.15"/>
+
+                        <!-- Wifi signal above head -->
+                        <path d="M231 125 Q245 118 259 125" stroke="#F5A623" stroke-width="2.5" stroke-linecap="round" fill="none" fill-opacity="0.6"/>
+                        <path d="M224 117 Q245 107 266 117" stroke="#F5A623" stroke-width="2" stroke-linecap="round" fill="none" fill-opacity="0.4"/>
+                        <circle cx="245" cy="112" r="3" fill="#F5A623" fill-opacity="0.65"/>
+                    </svg>
                 </div>
             </div>
         </div>
