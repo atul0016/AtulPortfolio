@@ -122,6 +122,16 @@ section { padding: 5rem 0; }
 .nav-link:hover,
 .nav-link.active { color: var(--primary); }
 
+.nav-link-hire {
+    background: var(--gradient-primary);
+    color: #fff !important;
+    padding: 0.4rem 1rem;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 0.85rem;
+}
+.nav-link-hire:hover { opacity: 0.9; }
+
 .hamburger {
     display: none;
     flex-direction: column;
@@ -779,6 +789,96 @@ section { padding: 5rem 0; }
 .education-meta i { color: var(--primary); font-size: 0.8rem; }
 
 /* ===================================
+   Hire Me CTA
+   =================================== */
+.hire-me {
+    padding: 5rem 0;
+    background: var(--gradient-subtle);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+}
+.hire-me-content {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+}
+.hire-me-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.4rem 1rem;
+    background: rgba(37, 99, 235, 0.08);
+    border: 1px solid rgba(37, 99, 235, 0.2);
+    border-radius: 50px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--primary);
+    margin-bottom: 1.5rem;
+}
+.status-dot-pulse {
+    width: 8px;
+    height: 8px;
+    background: #22c55e;
+    border-radius: 50%;
+    animation: pulse-dot 2s ease-in-out infinite;
+}
+@keyframes pulse-dot {
+    0%, 100% { opacity: 1; box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.4); }
+    50% { opacity: 0.8; box-shadow: 0 0 0 6px rgba(34, 197, 94, 0); }
+}
+.hire-me-title {
+    font-family: var(--font-heading);
+    font-size: 2.25rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: var(--text);
+}
+.hire-me-description {
+    color: var(--text-secondary);
+    font-size: 1.05rem;
+    line-height: 1.75;
+    margin-bottom: 2rem;
+}
+.hire-me-services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem;
+    margin-bottom: 2.5rem;
+}
+.hire-service-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.5rem 1rem;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--text);
+    transition: var(--transition);
+}
+.hire-service-tag:hover {
+    border-color: var(--primary-light);
+    box-shadow: var(--shadow-sm);
+}
+.hire-service-tag i {
+    color: var(--primary);
+    font-size: 0.85rem;
+}
+.hire-me-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+.btn-lg {
+    padding: 0.85rem 2rem;
+    font-size: 1rem;
+}
+
+/* ===================================
    Contact
    =================================== */
 .contact-content {
@@ -947,6 +1047,8 @@ section { padding: 5rem 0; }
     .hero-buttons { flex-direction: column; }
     .contact-content { grid-template-columns: 1fr; gap: 2rem; }
     .project-card-featured { grid-template-columns: 1fr; }
+    .hire-me-title { font-size: 1.75rem; }
+    .hire-me-buttons { flex-direction: column; align-items: center; }
 }
 
 @media (max-width: 640px) {
