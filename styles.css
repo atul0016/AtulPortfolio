@@ -801,10 +801,65 @@ section { padding: 5rem 0; }
     background: #0f172a;
 }
 
+/* Chrome Extensions Banner & Cards */
+.project-card-extensions-banner {
+    grid-column: 1 / -1;
+    background: linear-gradient(135deg, #0f172a 0%, #1a1e2e 50%, #1e1a2e 100%);
+    border: 1px solid rgba(22, 163, 106, 0.3);
+}
+.extensions-banner-content { padding: 2rem; }
+.extensions-banner-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+.extensions-banner-icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 14px;
+    background: linear-gradient(135deg, #16a34a, #22d3ee);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: #fff;
+    flex-shrink: 0;
+}
+.project-card-extensions-banner .project-title {
+    color: #fff;
+    font-size: 1.3rem;
+}
+.extensions-banner-subtitle {
+    color: #94a3b8;
+    font-size: 0.85rem;
+    margin-top: 0.25rem;
+}
+.project-card-extensions-banner .project-description { color: #cbd5e1; }
+.project-card-extensions-banner .tech-tag {
+    background: rgba(22, 163, 106, 0.15);
+    color: #4ade80;
+    border-color: rgba(22, 163, 106, 0.3);
+}
+.project-card-extensions-banner:hover {
+    border-color: rgba(22, 163, 106, 0.5);
+    box-shadow: 0 8px 30px rgba(22, 163, 106, 0.15);
+}
+
+/* Individual Extension Card styling */
+.ext-card .project-image-real {
+    min-height: 180px;
+    background: #0f172a;
+}
+.ext-card .project-image-real img {
+    object-fit: contain;
+    background: #0f172a;
+}
+
 /* Project Stats */
 .project-stats {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     gap: 1.5rem;
     margin-top: 3rem;
     padding: 2rem;
