@@ -25,10 +25,19 @@
 | # | Project | Type | Key Tech | Live Link |
 |---|---------|------|----------|-----------|
 | P1 | **SA ERP** | Enterprise Resource Planning | Electron · React · TypeScript · SQLite | [Live](https://indian-erp.vercel.app) · [GitHub](https://github.com/atul0016/sa-erp) |
-| P2 | **ParkManager** | Smart Parking SaaS | React 19 · Appwrite · Dexie.js · Electron · PWA | [Live](https://park-my-vehicle.vercel.app) · [GitHub](https://github.com/atul0016/park-manager) |
+| P2 | **ParkManager** | Smart Parking SaaS | React 19 · Appwrite · Dexie.js · Electron · PWA | [Live](https://atul0016.github.io/park-manager/) · [App Guide](https://atul0016.github.io/park-manager/app-guide.html) · [GitHub](https://github.com/atul0016/park-manager) |
 | P3 | **BloomNest** | Childcare Management Platform | Angular 18 · Appwrite · Firebase · Chart.js | [Live](https://bloomnest-mu.vercel.app/) · [GitHub](https://github.com/atul0016/BloomNest) |
 | P4 | **Windows Desktop Utilities Suite** | 6 free PC apps on Microsoft Store | Tauri v2 · Rust · React 18 · TypeScript · Vite · Tailwind | [MS Store](https://apps.microsoft.com/search/publisher?name=Illusanato) |
 | P5 | **Chrome Extensions Suite** | ADHD Web Simplifier + TrustLayer | React 18 · TypeScript · Chrome MV3 · Vite · Tailwind | [Chrome Store](https://as-extensions.netlify.app) · [GitHub](https://github.com/atul0016/chrome-extensions) |
+
+> **ParkManager Demo Credentials (updated Apr 14):**
+> | Role | Email | Password |
+> |------|-------|----------|
+> | Owner | owner@parkmanager.app | ParkM@n2026#Own0 |
+> | Manager | manager02@parkmanager.app | ParkM@n2026#Mg02 |
+> | Admin | admin@parkmanager.app | ParkM@n2026#Adm0 |
+> | Supervisor | supervisor02@parkmanager.app | ParkM@n2026#Sv02 |
+> | Operator | operator04@parkmanager.app | ParkM@n2026#Op04 |
 
 > ~~P4 Advanced Smart Capture~~ — **REMOVED Apr 8, 2026** (different from the new P4 above)
 > ~~P5 Pixel Ruler + Alignment Checker~~ — **REMOVED Apr 8, 2026** (different from the new P5 above)
