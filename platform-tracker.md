@@ -2,8 +2,8 @@
 
 > **Portfolio:** [beimatulportfolio.tech](https://beimatulportfolio.tech/)  
 > **Stack:** Angular · React.js · Node.js · Cloud  
-> **Last Updated:** April 14, 2026 (Session 7)
-> **Saved Snapshot:** All platforms updated with P4 (Windows Desktop Utilities Suite) and P5 (Chrome Extensions: ADHD Web Simplifier + TrustLayer). Product Hunt P4 & P5 scheduled for April 13, 2026.
+> **Last Updated:** April 16, 2026 (Session 8)
+> **Saved Snapshot:** P6 (Prompt Router) and P7 (Copilot Remote Control) VS Code extensions added. Dev.to, Hashnode, ProductHunt, Peerlist, Twitter updated with P6+P7. VS Code Marketplace added as platform #27.
 
 ---
 
@@ -11,7 +11,7 @@
 
 | Total Platforms | ✅ Done | 🔄 In Progress | ⏳ Not Started | 🔁 Needs Update |
 |:-:|:-:|:-:|:-:|:-:|
-| 26 | 15 | 1 | 3 | 1 |
+| 27 | 12 | 1 | 3 | 5 |
 
 > **Upwork Product Catalog:** 4 items approved Apr 6 2026 · Total catalog coverage: SaaS · Electron Desktop · ERP · Test Automation
 > **New platforms added Apr 13:** Medium · HackerNoon · Substack · daily.dev · CodersRank · Hacker News · BetaList · Devhunt · Polywork · YouTube
@@ -29,6 +29,8 @@
 | P3 | **BloomNest** | Childcare Management Platform | Angular 18 · Appwrite · Firebase · Chart.js | [Live](https://bloomnest-mu.vercel.app/) · [GitHub](https://github.com/atul0016/BloomNest) |
 | P4 | **Windows Desktop Utilities Suite** | 6 free PC apps on Microsoft Store | Tauri v2 · Rust · React 18 · TypeScript · Vite · Tailwind | [MS Store](https://apps.microsoft.com/search/publisher?name=Illusanato) |
 | P5 | **Chrome Extensions Suite** | ADHD Web Simplifier + TrustLayer | React 18 · TypeScript · Chrome MV3 · Vite · Tailwind | [Chrome Store](https://as-extensions.netlify.app) · [GitHub](https://github.com/atul0016/chrome-extensions) |
+| P6 | **Prompt Router** | VS Code Extension — AI mode auto-router | TypeScript · Naive Bayes ML · JWT/RSA-256 | [Marketplace](https://marketplace.visualstudio.com/items?itemName=atulhritik.prompt-router-ai) · [Buy](https://prompt-router-buy.vercel.app/) · [GitHub](https://github.com/extmind/prompt-router) |
+| P7 | **Copilot Remote Control** | VS Code Extension + React PWA — phone mirror for Copilot agent | TypeScript · WebSocket · Cloudflare · React 18 PWA · Firebase FCM | [Marketplace](https://marketplace.visualstudio.com/items?itemName=atulhritik.copilot-remote) · [Buy](https://agent-handle.vercel.app) · [PWA](https://pwa-six-pi.vercel.app) |
 
 > **ParkManager Demo Credentials (updated Apr 14):**
 > | Role | Email | Password |
@@ -38,6 +40,31 @@
 > | Admin | admin@parkmanager.app | ParkM@n2026#Adm0 |
 > | Supervisor | supervisor02@parkmanager.app | ParkM@n2026#Sv02 |
 > | Operator | operator04@parkmanager.app | ParkM@n2026#Op04 |
+
+> **P6 — Prompt Router (added Apr 16, 2026):**
+> - VS Code Marketplace: [atulhritik.prompt-router-ai](https://marketplace.visualstudio.com/items?itemName=atulhritik.prompt-router-ai)
+> - Buy License: [prompt-router-buy.vercel.app](https://prompt-router-buy.vercel.app/)
+> - GitHub: [extmind/prompt-router](https://github.com/extmind/prompt-router)
+> - Publisher: [atulhritik](https://marketplace.visualstudio.com/publishers/atulhritik)
+> - Price: $2.9 / ₹19 · one-time · 3 device activations · Razorpay (India) + PayPal (International)
+> - License: JWT with RSA-256 · offline verification · device fingerprinting
+> - Problem: Devs default to Agent mode (~3000 tokens) for everything — wastes 5–10× tokens on simple questions
+> - Solution: Heuristic + Naive Bayes ML hybrid (40/60 blend) auto-routes each prompt to Ask / Plan / Agent
+> - Key features: `Ctrl+Shift+R` quick-input · `@smart` participant (mode label + switch button) · `@router` score breakdown · Token Savings Dashboard · local pattern learning (no cloud sync)
+> - Tech: TypeScript · Naive Bayes ML · JWT/RSA-256 · Upstash Redis · Razorpay + PayPal via Vercel · Resend email API
+
+> **P7 — Copilot Remote Control (added Apr 16, 2026):**
+> - VS Code Marketplace: [atulhritik.copilot-remote](https://marketplace.visualstudio.com/items?itemName=atulhritik.copilot-remote)
+> - Buy License: [agent-handle.vercel.app](https://agent-handle.vercel.app)
+> - Phone PWA: [pwa-six-pi.vercel.app](https://pwa-six-pi.vercel.app)
+> - Price: ₹49 / ~$6 · one-time lifetime · $0/month infra (Vercel + Firebase + Cloudflare all free tier)
+> - License: JWT RS256 RSA-2048 · offline verification · machine fingerprint (`node-machine-id`)
+> - Problem: Copilot agent stops for confirmations and waits silently — you must be physically at PC; every pause = dead time
+> - Solution: Phone mirrors VS Code Copilot chat live; Firebase FCM buzzes phone when agent needs input; reply from anywhere
+> - Architecture: localhost WebSocket server → Cloudflare quick tunnel → phone PWA; no relay server owned by developer
+> - Streaming: 20ms polling of Copilot JSONL session files; handles REPLACE snapshots + SPLICE patches; 200-message history buffer
+> - Key features: Real-time chat mirror · Push notifications (FCM) · File upload from phone to workspace · Mid-stream reconnection
+> - Tech: TypeScript · WebSocket (`ws`) · Cloudflare `cloudflared` (bundled binary) · React 18 PWA · Firebase FCM · JWT RS256 RSA-2048 · Vercel serverless · Resend
 
 > ~~P4 Advanced Smart Capture~~ — **REMOVED Apr 8, 2026** (different from the new P4 above)
 > ~~P5 Pixel Ruler + Alignment Checker~~ — **REMOVED Apr 8, 2026** (different from the new P5 above)
@@ -51,18 +78,27 @@
 
 | # | Platform | Status | Last Action | ✅ Projects Covered | ⚠️ Projects Missing |
 |---|----------|--------|-------------|--------------------|--------------------|
-| 1 | 🐙 **GitHub Profile README** | 🔁 Needs Update | Apr 8, 2026 — P1 P2 P3 covered · **NEW:** P4 (6 MS Store apps) + P5 (Chrome extensions) not yet in README | P1 P2 P3 | P4 P5 |
+| 1 | 🐙 **GitHub Profile README** | 🔁 Needs Update | Apr 8, 2026 — P1 P2 P3 covered · P4 + P5 not yet in README · **Apr 16:** P6 + P7 also missing | P1 P2 P3 | P4 P5 P6 P7 |
 | 2 | 💼 **LinkedIn** | ⏳ Not Started | — | None | P1 P2 P3 |
-| 3 | ✍️ **Dev.to** | ✅ Done | Apr 12, 2026 — Bio updated (Rust/Tauri added) · "Hacking on" updated · P4 article published · P5 article published | P1 P2 P3 P4 P5 | — |
-| 4 | 📝 **Hashnode** | ✅ Done | Apr 12, 2026 — P4 article published · P5 article published | P1 P2 P3 P4 P5 | — |
+| 3 | ✍️ **Dev.to** | ✅ Done | Apr 16, 2026 — P6 + P7 articles published | P1 P2 P3 P4 P5 P6 P7 | — |
+| 4 | 📝 **Hashnode** | ✅ Done | Apr 16, 2026 — P6 + P7 articles published | P1 P2 P3 P4 P5 P6 P7 | — |
+
+> **Hashnode details (updated Apr 16):**
+> - Blog: [imatulsrivas.hashnode.dev](https://imatulsrivas.hashnode.dev) · 5 posts total
+> - **P6 URL:** https://imatulsrivas.hashnode.dev/i-built-a-vs-code-extension-that-auto-selects-askplanagent-mode-for-every-copilot-prompt
+> - **P7 URL:** https://imatulsrivas.hashnode.dev/i-built-a-vs-code-extension-so-you-can-respond-to-github-copilot-agent-from-your-phone
+> - Tags: #vscode-extensions #github #typescript #productivity (P6) · #vscode-extensions #github #typescript #webdev (P7)
+> - **Status:** ✅ Done
 
 > **Dev.to details (updated Apr 12):**
 > - Handle: `@imatulsrivas` · [dev.to/imatulsrivas](https://dev.to/imatulsrivas)
 > - Bio: updated with Rust/Tauri ✅
 > - Links: Portfolio ✅ · GitHub ✅ · Twitter ✅
 > - "Hacking on" field: SA ERP · ParkManager · BloomNest · Windows Desktop Utilities Suite · ADHD Web Simplifier ✅
-> - Posts: 5 published — P1 SA ERP ✅ · P2 ParkManager ✅ · P3 BloomNest ✅ · P4 Windows Desktop Utilities Suite ✅ · P5 Chrome Extensions ✅
-> - **Status:** ✅ Complete
+> - Posts: 7 published — P1 SA ERP ✅ · P2 ParkManager ✅ · P3 BloomNest ✅ · P4 Windows Desktop Utilities Suite ✅ · P5 Chrome Extensions ✅ · P6 Prompt Router ✅ · P7 Copilot Remote Control ✅
+> - **P6 URL:** https://dev.to/imatulsrivas/i-built-a-vs-code-extension-that-auto-selects-askplanagent-mode-for-every-copilot-prompt-116n
+> - **P7 URL:** https://dev.to/imatulsrivas/i-built-a-vs-code-extension-so-you-can-respond-to-github-copilot-agent-from-your-phone-n0o
+> - **Status:** ✅ Done
 
 ---
 
@@ -109,7 +145,7 @@
 
 | # | Platform | Status | Last Action | ✅ Projects Covered | ⚠️ Projects Missing |
 |---|----------|--------|-------------|--------------------|--------------------|
-| 10 | 🦁 **Product Hunt** | ✅ Done | Apr 12, 2026 — P5 (ADHD Web Simplifier) scheduled Apr 13 · P4 (Windows Desktop Utilities Suite) scheduled Apr 13 | P1 P2 P3 P4 P5 | — |
+| 10 | 🦁 **Product Hunt** | ✅ Done | Apr 16, 2026 — P6 Prompt Router + P7 Copilot Remote Control saved as drafts (pre-launch) | P1 P2 P3 P4 P5 P6 P7 | — |
 
 > **Product Hunt details (updated Apr 9):**
 > - Profile: [@atul0016](https://www.producthunt.com/@atul0016) · Name: Atul Srivastava ✅ · Headline: "Full-Stack Dev · React, Angular, Node.js" ✅
@@ -152,7 +188,7 @@
 > - **P2 BloomNest:** linked to https://bloomnest-mu.vercel.app/ ✅
 > - Note: Free plan shows max 2 products; location not publicly displayed
 
-| 12 | 🤝 **Peerlist** | ✅ Done | Apr 12, 2026 — P4 + P5 projects added · Bio updated · Rust + Tauri skills added | P1 P2 P3 P4 P5 | — |
+| 12 | 🤝 **Peerlist** | ✅ Done | Apr 16, 2026 — P6 Prompt Router + P7 Copilot Remote Control projects added | P1 P2 P3 P4 P5 P6 P7 | — |
 
 > **Peerlist details (updated Apr 8):**
 > - Profile: [@imatulsrivas](https://peerlist.io/imatulsrivas) · Name: Atul Srivastava ✅
@@ -165,7 +201,7 @@
 > - ~~P4 Advanced Smart Capture~~ — deleted Apr 8
 > - ~~P5 Pixel Ruler~~ — deleted Apr 8
 > - "Chrome Extension" skill tag removed ✅
-| 13 | 🐦 **X (Twitter)** | ✅ Done | Apr 12, 2026 — P4 tweet posted (Windows Desktop Utilities Suite) · P5 tweet posted (ADHD Web Simplifier) | P1 P2 P3 P4 P5 | — |
+| 13 | 🐦 **X (Twitter)** | ✅ Done | Apr 16, 2026 — P6 Prompt Router + P7 Copilot Remote Control tweets posted | P1 P2 P3 P4 P5 P6 P7 | — |
 
 > **X details (updated Apr 10):**
 > - Handle: `@Atul_kr_srivas` · [x.com/Atul_kr_srivas](https://x.com/Atul_kr_srivas)
@@ -260,6 +296,19 @@
 > - Website: https://beimatulportfolio.tech ✅
 > - Account type: Creator (Tips + Commissions/Services)
 > - **Remaining:** Connect payment method · Add P1/P2/P3 project descriptions to page intro
+
+---
+
+### 🧩 Extension Marketplace
+
+| # | Platform | Status | Last Action | ✅ Projects Covered | ⚠️ Projects Missing |
+|---|----------|--------|-------------|--------------------|--------------------|
+| 27 | 🧩 **VS Code Marketplace** | ✅ Done | Apr 16, 2026 — P6 Prompt Router published · P7 Copilot Remote Control published | P6 P7 | — |
+
+> **VS Code Marketplace details (updated Apr 16):**
+> - Publisher: [atulhritik](https://marketplace.visualstudio.com/publishers/atulhritik)
+> - P6 Prompt Router: [atulhritik.prompt-router-ai](https://marketplace.visualstudio.com/items?itemName=atulhritik.prompt-router-ai) · Price: $2.9 / ₹19 · License: JWT RSA-256 · 3 activations
+> - P7 Copilot Remote Control: [atulhritik.copilot-remote](https://marketplace.visualstudio.com/items?itemName=atulhritik.copilot-remote) · Price: ₹49 / ~$6 · License: JWT RSA-2048 · machine fingerprint
 
 ---
 
