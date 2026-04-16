@@ -746,6 +746,17 @@ section { padding: 5rem 0; }
 /* Microsoft Store Apps Badge */
 .msapps-badge { background: #0078d4; }
 
+/* VS Code Extensions Badge */
+.vscode-badge { background: #007acc; }
+
+/* VS Code Extensions Banner */
+.project-card-vscode-banner {
+    grid-column: 1 / -1;
+    background: linear-gradient(135deg, #0d1117 0%, #1a2332 100%);
+    border: 1px solid rgba(0, 122, 204, 0.3);
+}
+.project-card-vscode-banner .extensions-banner-icon { background: linear-gradient(135deg, #007acc, #0ea5e9); }
+
 /* MS Apps Showcase Banner */
 .project-card-msapps-banner {
     grid-column: 1 / -1;

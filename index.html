@@ -314,7 +314,11 @@
                 </button>
                 <button class="filter-btn" data-filter="extension">
                     <i class="fab fa-chrome"></i>
-                    <span>Extensions</span>
+                    <span>Chrome Ext.</span>
+                </button>
+                <button class="filter-btn" data-filter="vscode">
+                    <i class="fas fa-puzzle-piece"></i>
+                    <span>VS Code Ext.</span>
                 </button>
 
             </div>
@@ -973,12 +977,149 @@
                     </div>
                 </div>
 
+                <!-- ============================================= -->
+                <!-- VS Code Extensions — Marketplace Suite        -->
+                <!-- ============================================= -->
+
+                <!-- VS Code Extensions Banner -->
+                <div class="project-card project-card-vscode-banner" data-scroll data-category="vscode">
+                    <div class="project-badge vscode-badge">
+                        <i class="fas fa-puzzle-piece"></i> VS Code Marketplace
+                    </div>
+                    <div class="project-content extensions-banner-content">
+                        <div class="extensions-banner-header">
+                            <div class="extensions-banner-icon">
+                                <i class="fas fa-puzzle-piece"></i>
+                            </div>
+                            <div>
+                                <h3 class="project-title">VS Code Extensions Suite</h3>
+                                <p class="extensions-banner-subtitle">2 Published Extensions · VS Code Marketplace · Built with TypeScript + VS Code API</p>
+                            </div>
+                        </div>
+                        <p class="project-description">
+                            Developer tools that supercharge GitHub Copilot — auto-routing prompts to save tokens, and
+                            remote-controlling your coding agent from your phone via a secure tunnel + PWA.
+                            All published on the VS Code Marketplace.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">TypeScript</span>
+                            <span class="tech-tag">VS Code API</span>
+                            <span class="tech-tag">WebSocket</span>
+                            <span class="tech-tag">JWT / RSA-2048</span>
+                            <span class="tech-tag">React 18</span>
+                            <span class="tech-tag">Firebase FCM</span>
+                            <span class="tech-tag">Cloudflare Tunnel</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://marketplace.visualstudio.com/publishers/atulhritik" target="_blank" class="project-link project-link-primary">
+                                <i class="fas fa-external-link-alt"></i>
+                                <span>Publisher Page</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Extension: Copilot Remote Control -->
+                <div class="project-card ext-card" data-scroll data-category="vscode">
+                    <div class="project-badge vscode-badge">
+                        <i class="fas fa-puzzle-piece"></i> VS Code Extension
+                    </div>
+                    <div class="project-image project-image-real">
+                        <img src="https://atulhritik.gallerycdn.vsassets.io/extensions/atulhritik/copilot-remote/0.2.2/1776307063603/Microsoft.VisualStudio.Services.Icons.Default" alt="Copilot Remote Control Icon" loading="lazy" style="object-fit:contain;padding:20px;background:#1e1e2e">
+                        <div class="project-image-overlay">
+                            <span class="project-status live">
+                                <span class="status-dot"></span> On VS Code Marketplace
+                            </span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3 class="project-title">📱 Copilot Remote Control</h3>
+                            <span class="project-date">VS Code Extension · v0.2.2</span>
+                        </div>
+                        <p class="project-description">
+                            Control your GitHub Copilot agent from your phone. Walk away from your desk —
+                            your agent keeps running via a secure Cloudflare tunnel, and your phone buzzes
+                            with a push notification when it needs a decision.
+                        </p>
+                        <div class="project-highlights">
+                            <div class="highlight-item"><i class="fas fa-mobile-alt"></i><span>Phone Control</span></div>
+                            <div class="highlight-item"><i class="fas fa-bell"></i><span>Push Notifications</span></div>
+                            <div class="highlight-item"><i class="fas fa-shield-alt"></i><span>Secure Tunnel</span></div>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-tag">TypeScript</span>
+                            <span class="tech-tag">WebSocket</span>
+                            <span class="tech-tag">Cloudflare</span>
+                            <span class="tech-tag">Firebase FCM</span>
+                            <span class="tech-tag">React PWA</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://marketplace.visualstudio.com/items?itemName=atulhritik.copilot-remote" target="_blank" class="project-link project-link-primary">
+                                <i class="fas fa-external-link-alt"></i>
+                                <span>VS Code Marketplace</span>
+                            </a>
+                            <a href="https://agent-handle.vercel.app" target="_blank" class="project-link project-link-secondary">
+                                <i class="fas fa-shopping-cart"></i>
+                                <span>Buy License</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Extension: Prompt Router -->
+                <div class="project-card ext-card" data-scroll data-category="vscode">
+                    <div class="project-badge vscode-badge">
+                        <i class="fas fa-puzzle-piece"></i> VS Code Extension
+                    </div>
+                    <div class="project-image project-image-real">
+                        <img src="https://atulhritik.gallerycdn.vsassets.io/extensions/atulhritik/prompt-router-ai/0.1.0/1776344952794/Microsoft.VisualStudio.Services.Icons.Default" alt="Prompt Router Icon" loading="lazy" style="object-fit:contain;padding:20px;background:#1e1e2e">
+                        <div class="project-image-overlay">
+                            <span class="project-status live">
+                                <span class="status-dot"></span> On VS Code Marketplace
+                            </span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3 class="project-title">🧠 Prompt Router</h3>
+                            <span class="project-date">VS Code Extension · v0.1.0</span>
+                        </div>
+                        <p class="project-description">
+                            Automatically detects whether your Copilot prompt needs Ask, Plan, or Agent mode —
+                            routes it instantly, saving 5–10x tokens with zero extra clicks.
+                            Heuristic + Naive Bayes ML hybrid classifier, fully local.
+                        </p>
+                        <div class="project-highlights">
+                            <div class="highlight-item"><i class="fas fa-route"></i><span>Auto-routing</span></div>
+                            <div class="highlight-item"><i class="fas fa-coins"></i><span>Token Savings</span></div>
+                            <div class="highlight-item"><i class="fas fa-brain"></i><span>ML + Heuristic</span></div>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-tag">TypeScript</span>
+                            <span class="tech-tag">Naive Bayes ML</span>
+                            <span class="tech-tag">VS Code API</span>
+                            <span class="tech-tag">JWT / Razorpay</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://marketplace.visualstudio.com/items?itemName=atulhritik.prompt-router-ai" target="_blank" class="project-link project-link-primary">
+                                <i class="fas fa-external-link-alt"></i>
+                                <span>VS Code Marketplace</span>
+                            </a>
+                            <a href="https://prompt-router-buy.vercel.app" target="_blank" class="project-link project-link-secondary">
+                                <i class="fas fa-shopping-cart"></i>
+                                <span>Buy License</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
             <!-- Project Stats Bar -->
             <div class="project-stats" data-scroll>
                 <div class="stat-item">
-                    <div class="stat-number" data-count="14">0</div>
+                    <div class="stat-number" data-count="16">0</div>
                     <div class="stat-label">Projects Shipped</div>
                 </div>
                 <div class="stat-item">
@@ -988,6 +1129,10 @@
                 <div class="stat-item">
                     <div class="stat-number" data-count="2">0</div>
                     <div class="stat-label">Chrome Extensions</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-count="2">0</div>
+                    <div class="stat-label">VS Code Extensions</div>
                 </div>
                 <div class="stat-item">
                     <div class="stat-number" data-count="8">0</div>
